@@ -1,7 +1,6 @@
 package br.com.alura.screenmatch.boticario.perfumes;
 
 import br.com.alura.screenmatch.boticario.padronizacaodosperfumes.Cremes;
-import br.com.alura.screenmatch.boticario.padronizacaodosperfumes.Perfumes;
 
 public class CremePele extends Cremes {
     public CremePele(String nomeDoCreme, int notaDoCreme) {
