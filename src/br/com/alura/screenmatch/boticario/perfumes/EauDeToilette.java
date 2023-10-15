@@ -10,7 +10,7 @@ public class EauDeToilette extends Perfumes {
     int classificacaoDosEauDeToilette;
 
     @Override
-    public int getClassificacao() {
+    public int getProjecao() {
         classificacaoDosEauDeToilette = 5;
         System.out.println("Sua classificação de projeção é "+ classificacaoDosEauDeToilette +" pois é \n" +
                 "considerado um Eau de Toilette.(Baixa projeção)");

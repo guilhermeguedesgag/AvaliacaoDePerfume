@@ -42,18 +42,22 @@ public class Main {
 
             System.out.println();
 
-            System.out.println("Você inseriu a nota de " + itemDoArrayDoPerfume.getNotaDoPerfume() + " para o perfume" +
-                    " " + itemDoArrayDoPerfume.getNome() + ".");
 
 
-            if (itemDoArrayDoPerfume.getClassificacao() > 0) {
-                // esse cara irá pegar a classificação se ela for maior que zero(0)
+
+            if (itemDoArrayDoPerfume.getProjecao() > 1) {
+                // Você pode comparar com o itemDoArrayDoCreme
+
+                System.out.println("Você inseriu a nota de " + itemDoArrayDoPerfume.getNotaDoPerfume() + " para o perfume" +
+                        " " + itemDoArrayDoPerfume.getNome() + ".");
+                // esse cara irá pegar a classificação somente se ela for maior ou igual a 1.
 
 
 
             } else {
                 // se a classificacao não for maior que zero, ele irá imprimir o valor abaixo
-                System.out.println("Não há classificacao definida para este produto.");
+
+                System.out.println("Não há classificacao definida para o : "+itemDoArrayDoPerfume);
 
             }
 
@@ -64,15 +68,27 @@ public class Main {
         }
         //Array que imprimi a lista dos cremes enquanto ele possui itens na lista
         for (Cremes itensDoArrayDoCreme : listaDeCremes){
-            System.out.println();
-            System.out.println("Você inseriu a nota de " + itensDoArrayDoCreme.getNotaDoCreme() + " para o perfume" +
-                    " " + itensDoArrayDoCreme.getNomeDoCreme() + ".");
 
-            if (itensDoArrayDoCreme.getClassificacao() > 0 && itensDoArrayDoCreme instanceof Cremes) {
-                // esse cara irá pegar a classificação se ela for maior que zero(0)
-                // e também está comparando se ele é uma instancia(subtipo /classe filha) de 'Cremes'
+            System.out.println();
+            int classificacao = itensDoArrayDoCreme.getProjecao();
+            //ou você pode definir o itansDoArrayDoCreme em um atributo e chamar ele abaixo
+
+
+            if ( classificacao > 1) {
+                System.out.println("Você inseriu a nota de " + itensDoArrayDoCreme.getNotaDoCreme() + " para o perfume" +
+                        " " + itensDoArrayDoCreme.getNomeDoCreme() + ".");
+
+
+
+
+            } else {
+
+
+                System.out.println("Não há classificacao definida para o : "+ itensDoArrayDoCreme);
 
             }
+
+
 
         }
 

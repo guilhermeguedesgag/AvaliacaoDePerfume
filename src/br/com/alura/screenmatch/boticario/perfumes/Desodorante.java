@@ -10,9 +10,11 @@ public class Desodorante extends Perfumes {
     int classificacaoDosDesodorante;
 
     @Override
-    public int getClassificacao() {
+    public int getProjecao() {
         classificacaoDosDesodorante = 0;
-        System.out.println("Sua classificação de projeção é "+ classificacaoDosDesodorante +" (Sem mensuração de projeção)");
+        System.out.println("Não há mensuração de projeção é "+ classificacaoDosDesodorante +" " +
+                "(Sem mensuração de projeção)");
+
         return 0;
     }
 

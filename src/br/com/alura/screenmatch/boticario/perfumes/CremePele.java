@@ -10,7 +10,7 @@ public class CremePele extends Cremes {
     int classificacaoDosCremes;
 
     @Override
-    public int getClassificacao() {
+    public int getProjecao() {
         classificacaoDosCremes = 1;
         System.out.println("Sua classificação de projeção é "+ classificacaoDosCremes +" (Sem mensuração de projeção)");
         return 1;

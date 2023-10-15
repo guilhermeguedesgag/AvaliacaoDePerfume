@@ -1,8 +1,8 @@
 package br.com.alura.screenmatch.boticario.padronizacaodosperfumes;
 
-import br.com.alura.screenmatch.regrapadrao.Classificacao;
+import br.com.alura.screenmatch.regrapadrao.Projecao;
 
-public class Perfumes implements Classificacao,  Comparable<Perfumes>{
+public class Perfumes implements Projecao,  Comparable<Perfumes>{
 
 
     // o intuito é deixar tudo no perfume
@@ -29,9 +29,9 @@ public class Perfumes implements Classificacao,  Comparable<Perfumes>{
 
 
     @Override
-    public int getClassificacao() {
+    public int getProjecao() {
 
-        return getClassificacao();
+        return getProjecao();
     }
 
 

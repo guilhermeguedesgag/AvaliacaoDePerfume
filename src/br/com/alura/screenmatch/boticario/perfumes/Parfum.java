@@ -10,7 +10,7 @@ public class Parfum extends Perfumes {
     int classificacaoDosParfum;
 
     @Override
-    public int getClassificacao() {
+    public int getProjecao() {
         classificacaoDosParfum = 9;
         System.out.println("Sua classificação de projeção é "+ classificacaoDosParfum +" pois é \n" +
                 "considerado um Parfum(Máxima projeção).");
